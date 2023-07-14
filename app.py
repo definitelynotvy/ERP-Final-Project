@@ -262,7 +262,7 @@ else:
         st.plotly_chart(fig, use_container_width=True)
 	
 #deploy model lstm and prophet
-st.subheader("Prediction of Stock Price")
+st.subheader("Prediction of Crypto Price")
 
 # splitting date into training and testing 
 # data_training= pd.DataFrame(df['close'][0:int(len(df)*0.70)])
@@ -323,7 +323,7 @@ st.subheader("Prediction of Stock Price")
 
 # predict by date
 
-st.subheader('Stock Price Prediction by Date')
+st.subheader('Crypto Price Prediction by Date')
 
 df1=df.reset_index()['close']
 scaler=MinMaxScaler(feature_range=(0,1))
